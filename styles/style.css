@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing:border-box;
+  width:100%;
+  height:100vh;
+  background:linear-gradient(180deg, rgb(1, 15, 42), rgb(4, 17, 59), rgb(4, 17, 59), rgb(22, 7, 74), rgb(42, 1, 95), rgb(71, 9, 132), rgb(115, 21, 199), rgb(75, 16, 122));
+}
+header {
+  display:flex;
+  justify-content:center;
+  height:30px;
+  align-items:center;
+}
+header span {
+  color:#eee;
+  font-weight:700;
+}
+main {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:30px;
+}
+.buttons-players {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:15px;
+}
+.buttons-players span {
+  font-weight:700;
+  color:#eee;
+  text-shadow:0px 0px 3px #000;
+  margin-bottom:7px;
+}
+.buttons-row {
+  display:flex;
+  gap:20px;
+}
+.buttons-row .button-player {
+  padding:7px;
+  border-radius:5px;
+  border:2px solid rgb(75, 16, 122);
+  background-color:rgb(22, 7, 74);
+  color:#ccc;
+  font-size: 14px;
+  font-weight:600;
+  margin-bottom:15px;
+  cursor:pointer;
+  transition:.25s linear;
+}
+.button-player:hover {
+  transform:scale(1.2);
+}
+.player-row {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:500px;
+}
+  .info-team {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:140px;
+  transition: .25s linear;
+}
+.info-team:hover {
+  transform:scale(1.2)
+}
+.player-info {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding: 5px 10px;
+  border:1px solid transparent;
+  box-shadow: 0px 0px 7px 7px rgb(79, 11, 134);
+  border-radius:15px;
+  margin-top:7px;
+  height:430px;
+  transition:.25s linear;
+  cursor:pointer;
+}
+.player-info:hover {
+  transform:scale(1.05);
+}
+.info {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size:12px;
+  transition: 0.25s linear;
+  cursor:pointer;
+}
+.info:hover {
+  transform: scale(1.2);
+}
+.info-team span {
+  color:#fff;
+  font-size:13px;
+  font-weight:300;
+  text-align:center;
+}
+.info-number{
+  color:#fff;
+  font-weight:600;
+  font-size:inherit;
+  margin-top:5px;
+}
+.info-border {
+  width:70px;
+  height:1px;
+  background-color:#7fffd4;
+  margin-top:5px;
+}
+.info-name {
+  color:#ccc;
+  font-size:inherit;
+  font-weight:700;
+  text-transform:uppercase;
+  margin-top:9px;
+}
+.player-picture {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  transition:.25s linear;
+  animation-name: picturePlayer;
+  animation-duration: 1s;
+}
+.player-picture:hover {
+  transform:scale(1.1);
+}
+.player-name {
+  color:#eee;
+  font-size:13px;
+  font-weight:600;
+  text-transform: uppercase;
+}
+.player-name strong {
+  color:#eee;
+  font-size:20px;
+  font-weight:600;
+  text-transform: uppercase;
+}
+img {
+  color:#eee;
+  font-weight:700;
+  font-size:13px;
+}
+footer {
+  color:#eee;
+  font-weight:700;
+  font-size:12px;
+  text-align:center;
+  width:100%;
+  margin-top:25px;
+  position:absolute;
+  bottom:15px;
+}
+.player-picture img {
+width: 200px;
+height:400;
+}
+.info-team img {
+width:30px;
+margin-bottom:4px;
+}
+.player-position {
+  color:#eee;
+  font-size:13px;
+  font-weight:600;
+  text-transform: uppercase;
+}
+.player-position strong {
+  color:#eee;
+  font-size:20px;
+  font-weight:600;
+  text-transform: uppercase;
+}
+#player-info-right {
+  animation-name:playerInfoRightTransition;
+  animation-duration:1s;
+}
+#player-info-left {
+  animation-name: playerInfoLeftTransition;
+  animation-duration:1s;
+}
+@keyframes playerInfoRightTransition {
+  0% {
+    transform:translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes playerInfoLeftTransition {
+  0% {
+    transform:translateX(-100%);
+  }
+  100% {
+    transform:translateX(0%);
+  }
+}
+@keyframes picturePlayer {
+  0% {
+    transform:scale(0.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes picturePlayerNeymar {
+  0% {
+    transform:scale(0.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes picturePlayerMessi {
+  0% {
+    transform:scale(0.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes picturePlayerCristiano {
+  0% {
+    transform:scale(0.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes picturePlayerVini {
+  0% {
+    transform:scale(0.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes picturePlayerHaaland {
+  0% {
+    transform:scale(0.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes picturePlayerMbappe {
+  0% {
+    transform:scale(0.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+@media (max-width:770px) {
+  footer {
+    position:relative;
+    margin-top:50px;
+  }
+  body {
+    height:auto;
+  }
+  main {
+    flex-direction:column;
+  }
+  .player-row {
+    flex-direction:column-reverse;
+  }
+  .row2 {
+    flex-direction:column;
+  }
+  .infos {
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+  }
+  .mediaquery {
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+  }
+  .player-info {
+    height:auto;
+    padding:10px 15px;
+    margin-top:20px;
+    margin-bottom:15px;
+    height:132px;
+    justify-content:space-between;
+  }
+  .player {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .margin1 {
+    margin-bottom:20px;
+  }
+  #player1 {
+    border-bottom:1px solid rgb(75, 16, 122);
+  }
+  .buttons-players span {
+    margin-bottom:15px;
+  }
+  #player-info-right {
+    box-shadow: 0px 0px 7px 7px rgb(42, 1, 95);
+  }
+}
+@media (max-width:430px) {
+  .infos {
+    display:flex;
+    flex-direction:column;
+  }
+  .mediaquery {
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+  }
+  .player-info {
+    height:204px;
+  }
+  .player-row {
+    width:310px;
+  }
+}
+@media (max-width:375px) {
+  .buttons-row {
+    width:310px;
+    justify-content:center;
+  }
+  .buttons-row .button-player {
+    font-size:12px;
+    padding:5px;
+  }
+  .mediaquery {
+    gap:5px;
+  }
+}
